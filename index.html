@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Filmes Populares</h1>
+    <form>
+        <input type="text" name="pesquisa" id="pesquisa" placeholder="Digite algum filme para pesquisar">
+        <img src="/icon/search-icon.svg" alt="lupa" class="searchIcon">
+
+    </form>
+    <div class="check">
+        <input type="checkbox" name="OnFavorites" id="onfavorites">
+        <label for="OnFavorites">Mostra apenas meus filmes favoritos</label>
+
+    </div>
+
+    <div class="movies">
+          <div class="movie">
+             <div class="movieInfor"> 
+                <div>
+                    <img class="movieImg" src="/img/Avengers-Endgame.jpg" alt="img-filme1">
+                </div>
+                <div class="movieText">
+
+                    <h4 class="titulo-filme" id="txt">Avenger Endgame(2019)</h4>
+
+                    <div class="informacoes">
+                        <div class="star">
+                            <img src="/icon/star-icon.svg" alt="icon-star"><span>9.2</span>
+                        </div>
+                        <div class="rating" onclick=" favoriteButtonPressed()">
+                            <img id ="cor" src="/icon/corac-vazio.svg" alt="icon-coraçao"><span>Favoritar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-descricao">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laudantium, quam eaque placeat non neque odio totam maxime.
+                    Tenetur qui eligendi sit quisquam quia pariatur voluptate?
+                    Consectetur vel ut ipsum quibusdam!</p>
+            </div>
+        </div>  
+
+    </div>
+
+
+    <script src="/script.js" type="module"></script>
+
+</body>
+
+</html>
